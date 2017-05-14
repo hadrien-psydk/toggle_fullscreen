@@ -22,9 +22,9 @@ bool force_properties(Display* display, Window win) {
 
 	// Size hints
 	XSizeHints* size_hints_ptr = XAllocSizeHints();
-    size_hints_ptr->flags = PMinSize;
-    size_hints_ptr->min_width = 10;
-    size_hints_ptr->min_height = 10;
+	size_hints_ptr->flags = PMinSize;
+	size_hints_ptr->min_width = 10;
+	size_hints_ptr->min_height = 10;
 	XSetWMNormalHints(display, win, size_hints_ptr);
 	XFree(size_hints_ptr);
 	return true;
@@ -51,7 +51,7 @@ bool toggle_fullscreen(Display* display, Window win) {
 	Window root_win = DefaultRootWindow(display);
 
 	long evmask = SubstructureRedirectMask | SubstructureNotifyMask;
-	if( !XSendEvent(display, root_win, 0, evmask, &xev)) {
+	if (!XSendEvent(display, root_win, 0, evmask, &xev)) {
 	    println_err("XSendEvent failed");
 	    return false;
 	}
