@@ -8,8 +8,10 @@ Run the program in a terminal, with the window name (the window title text) as t
 ### How to build on Ubuntu
 
 Install build packages:
-`sudo apt install build-essential`
-`sudo apt install libx11-dev`
+```
+sudo apt install build-essential
+sudo apt install libx11-dev
+```
 
 Get the sources, open a terminal, go into the main directory and run `make`.
 
@@ -17,10 +19,9 @@ Then run the command `./toggle_fullscreen WINDOW_NAME` where WINDOW_NAME is the 
 
 ### Install/Uninstall
 
-To add the program to your system, you can call:
-`sudo make install`
-To uninstall it:
-`sudo make uninstall`
+To add the program to your system, you can call: `sudo make install`
+
+To uninstall it: `sudo make uninstall`
 
 ### Origin
 This utility was originally coded as a workaround to play Trine2 in fullscreen. So here are the instructions:
