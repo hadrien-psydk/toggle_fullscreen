@@ -3,7 +3,7 @@
 This programs allows toggling a X11 window to fullscreen (or more exactly, to a border-less maximized window).
 
 ### Usage
-Run the program in a terminal, with the window name (the window title text) as the argument. The program waits for the specified window to open, make it fullscreen and leave.
+Run the program in a terminal, with the window name (the window title text) as the argument. The program will wait for the specified window to open, make it fullscreen and leave.
 
 ### How to build on Ubuntu
 
